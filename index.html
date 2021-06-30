@@ -5,7 +5,9 @@
         <title>Website</title>
         <style>
             body {
-                background-color:rgb(76, 25, 230);
+               background: rgb(55,219,23);
+    background: linear-gradient(90deg, rgba(55,219,23,1) 19%, rgba(0,212,255,1) 100%);  
+    font-family: 'Lora', serif;
                 line-height:39px;
             }
             h2 {
@@ -26,9 +28,13 @@
         
     </head>
     <body>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+        
         
         <div id= "every" style= "display:">
-            <h1>cowmanthesuper's blog</h1>
+            <h1>cowmanthesuper's stuff</h1>
 
         <h3>Contents</h3>
         <ul>
@@ -37,6 +43,30 @@
             <li><a href="#3">Cowman's upgrade</a></li>
         </ul>
         
+            
+
+
+
+<h3 style= "color:blue">Hi guys I and Broden and I am good at math. I 
+also really like bombs for some reason. My favorite animals are mooses and weasles. My favorite color is blue.</h3>
+<button onclick= "myFunction()">Press here for extra info.</button>
+<button onclick= "myFunction2()">Press here to remove extra info.</button> 
+<button onclick= "myfunc()" >Press for a cute gif of a stoat, which is a type of weasel.</button>
+<button onclick= "myfunc2()" >Press to remove weasel gif.</button>
+<image  height= "100px" src= "http://www.timberjay.com/uploads/original/20210127-160305-1.29%20weasel%20looks.tif.jpg"></image>
+<image height= "100px" src= "https://upload.wikimedia.org/wikipedia/commons/8/8b/Moose_superior.jpg"></image>  
+<image id="secret"  style="display:none" src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr00aIOdSd2wRYyQvGvB_B2meHbegb30Aa2g&usqp=CAU"/>  
+<p id= "demo"></p>  
+<image id= "stoatgif" style= "height:40%; display:none " src = "https://thumbs.gfycat.com/NeedySmoothBlackfootedferret-size_restricted.gif"></image> 
+<image id= "morestoat" style= "height:40%; display:none " src = "https://i.pinimg.com/originals/0b/72/34/0b7234aed3dd516482892a4183e0ad57.jpg"></image> 
+<image id= "morestoat2" style= "height:40%; display:none " src = "https://i.pinimg.com/originals/ea/87/4f/ea874fb1cd0ad1433dc0ddd889c950cb.jpg"></image> 
+<div class= "card">
+    <h1>Hi. I Really like the word Hi.</h1>
+</div>
+
+
+
+
         <h2 id="1">Cowman's creation</h2>
         <h6>Some time in 2nd grade</h6>
         
@@ -55,8 +85,10 @@
         </div>
         <p>Type ListOfCommands</p>
         <input id= "input"/>
+            
+            
         <script>
-            function myFunction() {
+            function myFunctionnn() {
              alert("You have been hacked. OOF.");   
             }
             var input = document.getElementById("input")
@@ -80,6 +112,39 @@
             hi.style.display = ""
             }
             }
+            
+            function myFunction() {
+  document.getElementById("demo").innerHTML = "I have red hair. I like techno music. I do martial arts. I play a sport called squash. I think you are bad at Minecraft. I am good at life, breathing and sleeping. Also type More Stoats in the input box for more stoats. You can remove the extra pictures by typing Remove Extra Stoats in the input box. Put in KillWeb to ... You'll find out. The reverse command is BringBackWeb. ";
+}
+function myFunction2() {
+  document.getElementById("demo").innerHTML = " ";
+}
+function myfunc(){
+    document.getElementById("stoatgif").style.display = ""
+}
+function myfunc2(){
+    document.getElementById("stoatgif").style.display = "none"
+}
+var input = document.getElementById("input")
+input.onchange = () => {
+    if (input.value === "More Stoats") {
+        document.getElementById("morestoat").style.display = ""
+        document.getElementById("morestoat2").style.display = ""
+    }  else if (input.value === "Remove Extra Stoats") {
+        document.getElementById("morestoat").style.display = "none"
+        document.getElementById("morestoat2").style.display = "none"
+    }  else if (input.value === "SupaSecret") {
+        console.log("super secret unlock")
+        document.getElementById("secret").style.display = ""
+    } else if (input.value === "SupaLock") {
+        console.log("super secret relock")
+        document.getElementById("secret").style.display = "none"
+    } else if (input.value === "KillWeb") {
+        document.getElementById("div23").style.display = "none"
+    } else if (input.value === "BringBackWeb") {
+        document.getElementById("div23").style.display = ""
+    }
+}
         </script>
         
     </body>
