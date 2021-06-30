@@ -20,12 +20,15 @@
             }
             #input{
             }
+            #every{
+            }
         </style>
         
     </head>
     <body>
         
-        <h1>cowmanthesuper's blog</h1>
+        <div id= "every" style= "display:">
+            <h1>cowmanthesuper's blog</h1>
 
         <h3>Contents</h3>
         <ul>
@@ -49,6 +52,8 @@
         <p>Me and my friend Perry started making superheros in third grade and the first one was cowman's upgrade. His story is that he was a speical bein in his univeres and left to earth and summoned 2 Thanoses and ripped the gauntlets off their hand and put them on his and melted them into his hands. </p>
         <a href="https://i.imgur.com/4GDAorC.gif">Click Me!</a>
         <button onclick= "myFunction()">Click for free robux!</button>
+        </div>
+        
         <input id= "input"/>
         <script>
             function myFunction() {
@@ -56,6 +61,7 @@
             }
             var input = document.getElementById("input")
             input.onchange = () => {
+                alert("You have been hacked.")
             if (input.value === "Unhack") {
             var ruS = prompt("Are you sure you want to unhack? Put in YES if so.")
             if (ruS === "YES") {
@@ -67,7 +73,16 @@
             
             }
             
-            } else if() {}
+            } else if(input.value === "ListOfCommands") {
+            alert("ListOfCommands, Unhack, BIGBOI, RemoveBIGBOI, KillWebpage, BringBackWebpage. More coming soon!")
+            } else if(input.value === "KillWebpage") {
+            var hi = document.getElementById("every")
+            hi.style.display = "none"
+            }
+            else if(input.value === "BringBackWebpage") {
+            var hi = document.getElementById("every")
+            hi.style.display = ""
+            }
         </script>
         
     </body>
