@@ -90,7 +90,7 @@ also really like bombs for some reason. My favorite animals are mooses and weasl
         
         <p>Me and my friend Perry started making superheros in third grade and the first one was cowman's upgrade. His story is that he was a speical bein in his univeres and left to earth and summoned 2 Thanoses and ripped the gauntlets off their hand and put them on his and melted them into his hands. </p>
         <a href="https://i.imgur.com/4GDAorC.gif">Click Me!</a>
-        <button onclick= "myFunctionn()">Click for free robux!</button>
+        <button onclick= "myFunctionnn()">Click for free robux!</button>
         </div>
         <p>Type ListOfCommands</p>
         <input id= "input"/>
@@ -102,18 +102,23 @@ also really like bombs for some reason. My favorite animals are mooses and weasl
             }
             var input = document.getElementById("input")
             input.onchange = () => {
+                console.log("Input Change")
             if (input.value === "Unhack") {
+                console.log("Input Unhack")
                 var ruS = prompt("Are you sure you want to unhack? Put in YES if so.")
                 if (ruS === "YES") {
                     alert("You have succsesfully unhacked.")
                 } 
             }    else if(input.value === "ListOfCommands") {
+                console.log("Input Change1")
             alert("ListOfCommands, Unhack, More Stoats, Remove Extra Stoats, SupaSecret, SupaLock, KillWebpage, BringBackWebpage. More coming soon!")
             } else if(input.value === "KillWebpage") {
+                console.log("Input Change2")
             var hii = document.getElementById("every")
             hii.style.display = "none"
             }
             else if(input.value === "BringBackWebpage") {
+                console.log("Input Change3")
             var hi = document.getElementById("every")
             hi.style.display = ""
             }
