@@ -100,29 +100,8 @@ also really like bombs for some reason. My favorite animals are mooses and weasl
             function myFunctionnn() {
              alert("You have been hacked. OOF.");   
             }
-            var input = document.getElementById("input")
-            input.onchange = () => {
-                console.log("Input Change")
-            if (input.value === "Unhack") {
-                console.log("Input Unhack")
-                var ruS = prompt("Are you sure you want to unhack? Put in YES if so.")
-                if (ruS === "YES") {
-                    alert("You have succsesfully unhacked.")
-                } 
-            }    else if(input.value === "ListOfCommands") {
-                console.log("Input Change1")
-            alert("ListOfCommands, Unhack, More Stoats, Remove Extra Stoats, SupaSecret, SupaLock, KillWebpage, BringBackWebpage. More coming soon!")
-            } else if(input.value === "KillWebpage") {
-                console.log("Input Change2")
-            var hii = document.getElementById("every")
-            hii.style.display = "none"
-            }
-            else if(input.value === "BringBackWebpage") {
-                console.log("Input Change3")
-            var hi = document.getElementById("every")
-            hi.style.display = ""
-            }
-            }
+            
+            
             
             function myFunction() {
   document.getElementById("demo").innerHTML = "I have red hair. I like techno music. I do martial arts. I play a sport called squash. I think you are bad at Minecraft. I am good at life, breathing and sleeping.";
@@ -136,7 +115,7 @@ function myfunc(){
 function myfunc2(){
     document.getElementById("stoatgif").style.display = "none"
 }
-
+var input = document.getElementById("input")
 input.onchange = () => {
     if (input.value === "More Stoats") {
         document.getElementById("morestoat").style.display = ""
@@ -150,8 +129,26 @@ input.onchange = () => {
     } else if (input.value === "SupaLock") {
         console.log("super secret relock")
         document.getElementById("secret").style.display = "none";
+    } else if(input.value === "ListOfCommands") {
+                console.log("Input Change1")
+            alert("ListOfCommands, Unhack, More Stoats, Remove Extra Stoats, SupaSecret, SupaLock, KillWebpage, BringBackWebpage. More coming soon!")
+            } else if(input.value === "KillWebpage") {
+                console.log("Input Change2")
+            var hii = document.getElementById("every")
+            hii.style.display = "none"
+            }
+            else if(input.value === "BringBackWebpage") {
+                console.log("Input Change3")
+            var hi = document.getElementById("every")
+            hi.style.display = ""
+            } else if (input.value === "Unhack") {
+                console.log("Input Unhack")
+                var ruS = prompt("Are you sure you want to unhack? Put in YES if so.")
+                if (ruS === "YES") {
+                    alert("You have succsesfully unhacked.")
+                } 
+            }    
     
-}
 }
 
         </script>
